@@ -21,7 +21,7 @@
     
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     [notification setAlertBody:@"Touch to simulate HomeButton"];
-    [notification setFireDate:[[NSDate date] dateByAddingTimeInterval:10]];
+    [notification setFireDate:[[NSDate date] dateByAddingTimeInterval:3]];
     
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     
