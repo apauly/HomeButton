@@ -1,0 +1,7 @@
+HomeButton
+===========================
+
+This is a simple (less than 50 LOC) iOS App, which could come in handy if you got a malfunctioning (hardware) home button.
+
+Once opened, it will close itself directly and bring you back to your home screen. To access this functionality at any time, the app adds a notification to the notification center.Thus you can launch it at any time and go back to your home screen.
+
