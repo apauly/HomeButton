@@ -16,9 +16,8 @@
 {
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound]; 
     
-    for (UILocalNotification *oldNotification in [[UIApplication sharedApplication] scheduledLocalNotifications]) {
-        [[UIApplication sharedApplication] cancelLocalNotification:oldNotification];
-    }
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
     
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     [notification setAlertBody:@"Touch to simulate HomeButton"];
